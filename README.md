@@ -13,7 +13,6 @@
 
 #### 使用方法
 以下のように実行してください：
-```bash
 echo [数値] | python3 square_number.py
 
 #### 例
@@ -22,12 +21,21 @@ echo [数値] | python3 square_number.py
 入力が数値でない場合：echo "abc" | python3 square_number.py
 出力：Error: 入力は数値である必要があります。
 
-テストスクリプトについて
-このリポジトリには、メインスクリプト（square_number.py）をテストするためのスクリプト test_square_number.py が含まれています。このテストスクリプトは、以下の要素を確認します：
+###テストスクリプトについて
+
+このリポジトリには、メインスクリプト（square_number.py）をテストするためのスクリプト test_square_number.py が含まれています。
+####テスト内容
 ・メインスクリプトが正しい出力を返すか。
 ・入力値が適切に処理されるか。
 
-実行方法
+####実行方法
 以下のコマンドでテストを実行できます：
 python3 -m pytest
-成功時には 1 passed と表示されます。
+テスト結果 成功時には以下のように表示されます：
+=========================== test session starts ============================
+platform linux -- Python 3.x.x, pytest-x.x.x, ...
+collected 1 item
+
+test_square_number.py .                                              [100%]
+
+========================= 1 passed in 0.02 seconds =========================
