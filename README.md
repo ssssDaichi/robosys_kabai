@@ -30,8 +30,11 @@ echo [数値] | python3 square_number.py
 
 ####実行方法
 以下のコマンドでテストを実行できます：
+
 python3 -m pytest
+
 テスト結果 成功時には以下のように表示されます：
+
 =========================== test session starts ============================
 platform linux -- Python 3.x.x, pytest-x.x.x, ...
 collected 1 item
