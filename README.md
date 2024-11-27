@@ -21,3 +21,13 @@ echo [数値] | python3 square_number.py
 出力：25.0
 入力が数値でない場合：echo "abc" | python3 square_number.py
 出力：Error: 入力は数値である必要があります。
+
+###テストスクリプトについて
+このリポジトリには、メインスクリプト（square_number.py）をテストするためのスクリプト test_square_number.py が含まれています。このテストスクリプトは、以下の要素を確認します：
+・メインスクリプトが正しい出力を返すか。
+・入力値が適切に処理されるか。
+
+実行方法
+以下のコマンドでテストを実行できます：
+python3 -m pytest
+成功時には 1 passed と表示されます。
