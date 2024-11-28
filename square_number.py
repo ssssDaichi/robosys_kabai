@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+
+# SPDX-FileCopyrightText: 2024 Daichi Hirose
+# SPDX-License-Identifier: MIT
+
 import sys
 
 def main():
