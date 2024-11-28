@@ -13,14 +13,16 @@
 
 #### 使用方法
 以下のように実行してください：
+```
 echo [数値] | python3 square_number.py
-
+```
 #### 例
+```
 入力が5の場合：echo 5 | python3 square_number.py
 出力：25.0
 入力が数値でない場合：echo "abc" | python3 square_number.py
 出力：Error: 入力は数値である必要があります。
-
+```
 ### テストスクリプトについて
 
 このリポジトリには、メインスクリプト（square_number.py）をテストするためのスクリプト test_square_number.py が含まれています。
@@ -30,12 +32,12 @@ echo [数値] | python3 square_number.py
 
 #### 実行方法
 以下のコマンドでテストを実行できます：
-
+```
 python3 -m pytest
-
+```
 #### テスト結果 
 成功時には以下のように表示されます：
-
+```
 =========================== test session starts ============================
 platform linux -- Python 3.x.x, pytest-x.x.x, ...
 collected 1 item
@@ -43,6 +45,6 @@ collected 1 item
 test_square_number.py .                                              [100%]
 
 ========================= 1 passed in 0.02 seconds =========================
-
+```
 #### クレジット
 Daichi Hirose
