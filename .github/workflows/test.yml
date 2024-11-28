@@ -21,7 +21,9 @@ jobs:
         with:
           python-version: "3.9"
 
-
+      # 必要な依存関係をインストール（今回はなし）
+      - name: Install dependencies
+        run: pip install pytest
 
       # テストを実行
       - name: Run tests
