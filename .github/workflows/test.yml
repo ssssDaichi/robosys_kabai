@@ -1,0 +1,31 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Pythonをセットアップ
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      # 必要な依存関係をインストール（今回はなし）
+      - name: Install dependencies
+        run: pip install pytest
+
+      # テストを実行
+      - name: Run tests
+        run: pytest tests
+
