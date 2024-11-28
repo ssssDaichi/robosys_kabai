@@ -38,12 +38,12 @@ echo [数値] |./square_number
 ### 実行例
 入力が5の場合
 ```
-echo 5 | python3 square_number
+echo 5 | ./square_number
 25.0
 ```
 入力が数値でない場合
 ```
-echo "abc" | python3 square_number
+echo "abc" | ./square_number
 出力：Error: 入力は数値である必要があります。
 ```
 ## 動作環境
