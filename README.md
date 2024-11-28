@@ -19,7 +19,7 @@ $ git clone https://github.com/ssssDaichi/robosys_kabai.git
 #### 使用方法
 以下のように実行してください：
 ```
-$ echo [数値] | python3 square_number
+$ echo [数値] |./square_number
 ```
 #### 実行例
 ```
@@ -34,7 +34,7 @@ $ echo "abc" | python3 square_number
 #### ソフトウェア
 Python
 #### テスト環境
-ubuntu 22.04
+ubuntu 22.04 LTS
 #### ライセンス
 #### Copyright
 © 2024 Daichi Hirose
