@@ -27,5 +27,5 @@ jobs:
 
       # テストを実行
       - name: Run tests
-        run: pytest tests
+        run: pytest 
 
