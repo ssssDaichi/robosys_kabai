@@ -8,5 +8,5 @@ jobs:
         python-version: ["3.9"]
     steps:
     - uses: actions/checkout@v3
-    - name: All test
+    - name: Run tests
       run: ./test
