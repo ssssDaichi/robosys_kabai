@@ -43,3 +43,6 @@ collected 1 item
 test_square_number.py .                                              [100%]
 
 ========================= 1 passed in 0.02 seconds =========================
+
+#### クレジット
+Daichi Hirose
