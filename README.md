@@ -22,7 +22,7 @@ cd robosys_kabai
 ```
 2.実行権限を付与します。
 ```
-chmod +x square_number test
+chmod +x square_number
 ```
 
 ## 使用方法
