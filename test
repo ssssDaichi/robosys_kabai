@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2024 Daichi Hirose
+# SPDX-License-Identifier: MIT
+
+ng() {
+    echo "${1}行目が違うよ"
+    res=1
+}
+
+res=0
+
+out=$(echo 3 | ./square_number.py)
+[ "${out}" = "9.0" ] || ng "$LINENO"
+
+out=$(echo -3 | ./square_number.py)
+[ "${out}" = "9.0" ] || ng "$LINENO"
+
+out=$(echo a | ./square_number.py)
+[ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
+
+out=$(echo あ | ./square_number.py)
+[ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
+
+out=$(echo | ./square_number.py)
+[ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
+
+[ "$res" = 0 ] && echo "OK"
+
+exit $res
+
