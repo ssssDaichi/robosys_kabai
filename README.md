@@ -43,7 +43,7 @@ echo 5 | ./square_number
 ```
 入力が数値でない場合
 ```
-echo "abc" | ./square_number
+echo abc | ./square_number
 出力：Error: 入力は数値である必要があります。
 ```
 ## 動作環境
