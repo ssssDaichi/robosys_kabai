@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: MIT
 
 ng(){
-       echo ${1}行目が違うよ
-       res=1
+   echo ${1}行目が違うよ
+   res=1
 
 }
 
@@ -23,9 +23,9 @@ out=$(echo a | ./square_number.py)
 out=$(echo あ | ./square_number.py)
 [ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
 
-out=$(echo  | ./square_number.py)
+out=$(echo | ./square_number.py)
 [ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
 
-[ "$res" = 0 ] && echo OK
+[ "$res" = 0 ] && echo "OK"
 
 exit $res
