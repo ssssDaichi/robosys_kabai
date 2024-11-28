@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+
+# SPDX-FileCopyrightText: 2024 Daichi Hirose
+# SPDX-License-Identifier: MIT
+
 import subprocess
 
 def test_square_number():
