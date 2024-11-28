@@ -10,19 +10,19 @@ ng() {
 
 res=0
 
-out=$(echo 3 | ./square_number)
+out=$(echo 3 | ./square_number ) 
 [ "${out}" = "9.0" ] || ng "$LINENO"
 
-out=$(echo -3 | ./square_number)
+out=$(echo -3 | ./square_number )
 [ "${out}" = "9.0" ] || ng "$LINENO"
 
-out=$(echo a | ./square_number)
+out=$(echo a | ./square_number )
 [ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
 
-out=$(echo あ | ./square_number)
+out=$(echo あ | ./square_number )
 [ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
 
-out=$(echo | ./square_number)
+out=$(echo | ./square_number )
 [ "${out}" = "Error: 入力は数値である必要があります。" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo "OK"
