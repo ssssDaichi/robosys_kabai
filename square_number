@@ -16,7 +16,10 @@ def main():
         print(result)
     except ValueError:
         # 数値以外が入力された場合のエラーメッセージ
-        print("Error: 入力は数値である必要があります。")
+        print("Error: 入力は数値である必要があります。", file=sys.stderr)
+        # エラー時に終了ステータスコード1を返す
+        sys.exit(1)
+        
 
 if __name__ == "__main__":
     main()
