@@ -11,24 +11,24 @@
 このスクリプトは、標準入力から受け取った数値を2乗し、その結果を標準出力に返します。
 
 ### クローン方法
-以下のコマンドをターミナルで実行して、このリポジトリをローカル環境にクローンしてください。
+以下のコマンドを実行して、リポジトリをクローンしてください。
 ```
-$ git clone https://github.com/ssssDaichi/robosys_kabai.git
+git clone https://github.com/ssssDaichi/robosys_kabai.git
 ```
 #### クローン後の作業
 1.クローンしたディレクトリに移動します。
 ```
-$ cd robosys_kabai
+cd robosys_kabai
 ```
 2.実行権限を付与します。
 ```
-$ chmod +x square_number test
+chmod +x square_number
 ```
 
 ## 使用方法
-以下のコマンドでスクリプトを実行してください。
+以下のコマンドで実行してください。
 ```
-$ echo [数値] |./square_number
+echo [数値] |./square_number
 ```
 #### 入力と出力の説明
 入力：標準入力から受け取った数値を2乗します。
@@ -38,12 +38,12 @@ $ echo [数値] |./square_number
 ### 実行例
 入力が5の場合
 ```
-$ echo 5 | python3 square_number
+echo 5 | ./square_number
 25.0
 ```
 入力が数値でない場合
 ```
-$ echo "abc" | python3 square_number
+echo abc | ./square_number
 出力：Error: 入力は数値である必要があります。
 ```
 ## 動作環境
